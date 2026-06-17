@@ -26,13 +26,13 @@ Raw Input -> Label Encoding (Gender) -> One-Hot Encoding (Geography)
 ```
 
 ### ANN Architecture
-- **Input Layer** — 12 features after encoding
-- **Hidden Layer 1** — 64 neurons, ReLU activation
-- **Hidden Layer 2** — 32 neurons, ReLU activation
-- **Output Layer** — 1 neuron, Sigmoid activation (binary classification)
+- **Input Layer** : 12 features after encoding
+- **Hidden Layer 1** : 64 neurons, ReLU activation
+- **Hidden Layer 2** : 32 neurons, ReLU activation
+- **Output Layer** : 1 neuron, Sigmoid activation (binary classification)
 
 ### Why ReLU?
-ReLU (Rectified Linear Unit) outputs zero for negative values and keeps positive values as-is. It avoids the vanishing gradient problem that older activation functions like Sigmoid had in deep hidden layers — meaning weights update properly during backpropagation and the network actually learns.
+ReLU (Rectified Linear Unit) outputs zero for negative values and keeps positive values as-is. It avoids the vanishing gradient problem that older activation functions like Sigmoid had in deep hidden layers - meaning weights update properly during backpropagation and the network actually learns.
 
 ### Why Sigmoid on output?
 Since this is a binary classification task (churn or not), the output neuron needs to return a probability between 0 and 1. Sigmoid squishes any value into that range perfectly.
@@ -87,19 +87,19 @@ customer-churn-prediction/
 
 ## 📈 Output
 
-- **Churn Probability** — a score between 0 and 1
+- **Churn Probability** - a score between 0 and 1
 - **Risk Level:**
-  - 🟢 Low Risk — probability < 0.50
-  - 🟡 Medium Risk — probability 0.50 to 0.75
-  - 🔴 High Risk — probability > 0.75
+  - 🟢 Low Risk - probability < 0.50
+  - 🟡 Medium Risk - probability 0.50 to 0.75
+  - 🔴 High Risk - probability > 0.75
 
 ---
 
 ## 📚 What I Learned
 
-- How ANNs work — forward pass, loss calculation, backpropagation, weight updates
+- How ANNs work -> forward pass, loss calculation, backpropagation, weight updates
 - Role of activation functions and the difference between ReLU (hidden layers) and Sigmoid (output layer)
-- Full preprocessing pipeline — Label Encoding, One-Hot Encoding, Standard Scaling
+- Full preprocessing pipeline -> Label Encoding, One-Hot Encoding, Standard Scaling
 - Saving and loading model artifacts (`.h5`, `.pkl`) for deployment
 - Building a production-aware Streamlit app with caching, error handling, and clean UI
 

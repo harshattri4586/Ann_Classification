@@ -56,12 +56,6 @@ cover/
 *.mo
 *.pot
 
-*.h5
-*.pkl
-__pycache__/
-.env
-*.pyc
-
 
 # Django stuff:
 *.log
